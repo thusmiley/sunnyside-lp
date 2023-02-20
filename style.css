@@ -107,6 +107,7 @@ header .logo-white {
 }
 
 #menu-icon {
+  cursor: pointer;
   display: none;
 }
 

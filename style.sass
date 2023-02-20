@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap')
+
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
+body
+    font-size: 18px
+    font-family: 'Fraunces', serif
+    color: #24303E
+
+img
+    max-width: 100%
+    display: block
+
+h1, h2, h3, h4, .cta
+    font-weight: 900
+h1
+    font-size: 56px
+    letter-spacing: 8.75px
+h2
+    font-size: 40px
+    letter-spacing: -0.29px
+h3
+    font-size: 28px
+    letter-spacing: -0.2px 
+h4
+    font-size: 18px
+    letter-spacing: -0.13px 
+a
+    text-decoration: none
+    color: #24303E
+    transition: 0.3s ease   
+
+header, .hero, .features, .gallery, .clients, footer
+    max-width: 1440px
+    margin: 0 auto
+.logo
+    font-size: 30px
+
+@media only screen and (max-width: 1440px)    
+    header, .hero, .features, .gallery, .clients, footer
+        max-width: 768px
+    .logo
+        font-size: 24px    
+
+@media only screen and (max-width: 770px) 
+    header, .hero, .features, .gallery, .clients, footer
+        max-width: 100%
+
+// Header    
+header 
+    position: relative
+    .container
+        position: absolute
+        top: 0
+        left: calc(8px + 1.5625vw)
+        bottom: 0
+        right: calc(8px + 1.5625vw)
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-top: 60px
+        nav
+            a:not(:last-child)
+                margin-right: 47px
+            a    
+                color: white   
+                font-size: 18px 
+                &:hover
+                    color: #24303E
+            .cta
+                color: #24303E
+                padding: 16px 32px
+                background-color: #fff
+                border-radius: 28px    
+                &:hover
+                    color: white
+                    background-color: #78CEF5          
+    .logo-white
+        color: white   
+#menu-icon        
+    display: none
+
+@media only screen and (max-width: 1440px) 
+    header .container
+        margin-top: 35px
+    nav
+        display: none      
+    #menu-icon        
+        display: block
+// Hero
+.hero
+    background-image: url('./images/desktop/image-header.jpg')
+    min-height: 800px
+    background-position: top center
+    background-size: cover
+    background-repeat: no-repeat
+    padding-top: 195px
+    h1
+        color: white
+        text-align: center
+    img
+        position: absolute
+        left: 49%
+        top: 360px
+
+@media only screen and (max-width: 1440px) 
+    .hero
+        padding-top: 88px
+        min-height: 538px
+        h1
+            font-size: 40px
+        img
+            top: 220px  
+@media only screen and (max-width: 770px) 
+    .hero h1 
+        letter-spacing: 6.25px
+        padding-left: calc(8px + 1.5625vw)
+        padding-right: calc(8px + 1.5625vw)
+    .hero img
+        left: 47%
+
+// Features
+.transform, .stand-out, .services
+    display: flex
+    width: 100%
+.feature-content, .feature-img
+    width: 50%
+.feature-content
+    padding: 158px 110px 0 165px
+    p
+        color: #808397
+        line-height: 30px
+        letter-spacing: -0.13px
+        margin: 32px 0 40px 0
+        font-family: 'Barlow', sans-serif
+.feature-img img
+    width: 100%
+.service
+    height: 600px
+    background-position:  top center
+    background-repeat: no-repeat
+    background-size: cover
+    width: 50%
+    text-align: center
+    h3
+        margin-top: 398px
+        margin-bottom: 27px
+    p
+        font-family: 'Barlow', sans-serif
+        font-size: 16px
+        max-width: 38ch
+        margin: 0 auto
+.design
+    background-image: url('./images/desktop/image-graphic-design.jpg')    
+    h3
+        color: #24554A
+    p
+        color: #3E7467        
+.photography
+    background-image: url('./images/desktop/image-photography.jpg')
+    h3    
+        color: #052C3B
+    p
+        color:  #19536C       
+.cta
+    font-size: 15px
+    line-height: 25px
+    letter-spacing: 1px
+.transform a, .stand-out a 
+    display: inline-block
+    position: relative
+    &::before
+        content: ''
+        position: absolute
+        border-radius: 28px
+        bottom: 1px
+        left: -11px
+        width: 140px
+        height: 10px
+        z-index: -1
+.transform 
+    a::before
+        background: rgba(250,212,0,0.25)
+    a:hover:before
+        background-color: #FAD400 
+.stand-out 
+    a::before
+        background: rgba(254,119,102,0.25) 
+    a:hover:before
+        background-color: #FE7766 
+
+@media only screen and (max-width: 1440px) 
+    .transform
+        flex-direction: column-reverse
+    .stand-out, .services
+        flex-direction: column
+    .feature-content, .feature-img
+        width: 100%
+    .feature-content
+        padding: 64px calc(8px + 1.5625vw)
+        text-align: center
+        p
+            margin: 24px 0 32px 0
+    .service
+        width: 100%
+@media only screen and (max-width: 770px) 
+    .feature-content h2 
+        font-size: 32px
+    .service h3 
+        font-size: 28px
+    .feature-content, .service
+        padding-left: calc(8px + 1.5625vw)
+        padding-right: calc(8px + 1.5625vw)
+
+// Testimonials
+.clients
+    max-width: 1110px            
+    h2
+        font-size: 20px
+        letter-spacing: 5px
+        color: #A7AAAD
+        margin-top: 160px
+        margin-bottom: 81px
+        text-align: center
+.clients-wrapper
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    gap: 30px
+
+.client
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    text-align: center
+    img
+        width: 72px
+        border-radius: 100px
+        margin-bottom: 58px
+    .quote
+        font-family: 'Barlow', sans-serif
+        color: #5B636D
+        line-height: 32px
+    h4
+        margin: 69px 0 9px 0
+    .title
+        font-family: 'Barlow', sans-serif
+        font-size: 14px
+        line-height: 25px
+        letter-spacing: -0.1px
+        color: #A7AAAD
+
+@media only screen and (max-width: 1440px) 
+    .clients
+        max-width: 768px
+        h2
+            margin-top: 64px
+            margin-bottom: 0
+    .clients-wrapper
+        grid-template-columns: repeat(1, 1fr)
+        gap: 0
+    .client 
+        img
+            margin-top: 64px
+            margin-bottom: 32px
+        h4
+            margin: 32px 0 9px 0
+        .quote
+            max-width: 30ch
+@media only screen and (max-width: 770px) 
+    .clients
+        padding-left: calc(8px + 1.5625vw)
+        padding-right: calc(8px + 1.5625vw)
+// Gallery
+.gallery
+    display: grid
+    grid-template-columns: repeat(4, 1fr)            
+    margin-top: 160px
+    img
+        width: 100%
+
+@media only screen and (max-width: 1440px) 
+    .gallery
+        margin-top: 86px
+        grid-template-columns: repeat(2, 1fr) 
+
+// Footer
+footer
+    background-color: #90D4C6 
+footer, .footer-wrapper, .socials    
+    display: flex
+    justify-content: center
+.footer-wrapper
+    flex-direction: column
+    padding-top: 72px
+    padding-bottom: 72px
+    text-align: center
+.logo-dark
+    color: #2C7566
+    font-family: 'Barlow', sans-serif
+.footer-menu
+    margin: 40px 0 88px 
+    a
+        color: #458D7E
+        font-family: 'Barlow', sans-serif
+        &:not(:last-child)   
+            margin-right: 57px
+        &:hover
+            color: white
+.socials a:not(:last-child)
+    margin-right: 28px
+.socials a:hover 
+    filter: brightness(0) invert(1)
+
+@media only screen and (max-width: 1440px) 
+    .footer-wrapper
+        padding-top: 64px
+        padding-bottom: 80px

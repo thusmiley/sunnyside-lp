@@ -55,7 +55,7 @@ header, .hero, .features, .gallery, .clients, footer {
   font-size: 30px;
 }
 
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 1110px) {
   header, .hero, .features, .gallery, .clients, footer {
     max-width: 768px;
   }
@@ -110,7 +110,7 @@ header .logo-white {
   display: none;
 }
 
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 1110px) {
   header .container {
     margin-top: 35px;
   }
@@ -139,7 +139,7 @@ header .logo-white {
   top: 360px;
 }
 
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 1110px) {
   .hero {
     padding-top: 88px;
     min-height: 538px;
@@ -259,7 +259,7 @@ header .logo-white {
   background-color: #FE7766;
 }
 
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 1110px) {
   .transform {
     flex-direction: column-reverse;
   }
@@ -338,7 +338,7 @@ header .logo-white {
   color: #A7AAAD;
 }
 
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 1110px) {
   .clients {
     max-width: 768px;
   }
@@ -376,7 +376,7 @@ header .logo-white {
   width: 100%;
 }
 
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 1110px) {
   .gallery {
     margin-top: 86px;
     grid-template-columns: repeat(2, 1fr);
@@ -425,7 +425,7 @@ footer, .footer-wrapper, .socials {
   filter: brightness(0) invert(1);
 }
 
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 1110px) {
   .footer-wrapper {
     padding-top: 64px;
     padding-bottom: 80px;

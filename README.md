@@ -18,7 +18,7 @@ SunnySide Agency landing page
 ### Links
 
 - Git URL: https://github.com/thusmiley/sunnyside-lp.git
-- Live Site URL: https://thusmiley.github.io/clipboard-landing-page/
+- Live Site URL: https://github.com/thusmiley/sunnyside-lp.git
 
 ### Built with
 

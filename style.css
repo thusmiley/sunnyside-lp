@@ -114,10 +114,60 @@ header .logo-white {
   header .container {
     margin-top: 35px;
   }
-  nav {
+  header .container nav {
+    position: absolute;
+    background-color: #fff;
+    top: 50px;
+    width: 100%;
+    z-index: 2;
     display: none;
   }
+  header .container .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 39px 0;
+  }
+  header .container .menu:before {
+    content: "";
+    margin-top: -23px;
+    padding-top: 0px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-width: 24px 0 0 24px;
+    border-style: solid;
+    border-color: white transparent;
+    transform: rotate(90deg);
+  }
+  header .container .menu a {
+    color: #808397;
+    font-family: "Barlow", sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: -0.14px;
+    text-align: center;
+  }
+  header .container .menu a:hover {
+    color: #24303E;
+  }
+  header .container .menu a:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 32px;
+  }
+  header .container .menu .cta {
+    background-color: #FBD600;
+    font-family: "Fraunces", serif;
+    color: #24303E;
+  }
+  header .container .menu .cta:hover {
+    background-color: rgba(251, 214, 0, 0.5);
+  }
   #menu-icon {
+    display: block;
+  }
+  #ham.active {
     display: block;
   }
 }

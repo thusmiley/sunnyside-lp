@@ -21,13 +21,20 @@
     <header>
       <div class="container">
         <p class="logo logo-white">sunnyside</p>
-        <nav>
-          <a href="#">About</a>
-          <a href="#">Services</a>
-          <a href="#">Projects</a>
-          <a class="cta" href="#">CONTACT</a>
+        <img
+          id="menu-icon"
+          onclick="toggleMenu()"
+          src="./images/icon-hamburger.svg"
+          alt=""
+        />
+        <nav id="ham">
+          <div class="menu">
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Projects</a>
+            <a class="cta" href="#">CONTACT</a>
+          </div>
         </nav>
-        <img src="./images/icon-hamburger.svg" alt="" id="menu-icon">
       </div>
     </header>
 
@@ -172,7 +179,6 @@
           />
           <img src="./images/desktop/image-gallery-sugarcubes.jpg" alt="" />
         </picture>
-
       </section>
     </main>
 
